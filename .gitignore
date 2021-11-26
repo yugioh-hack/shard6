@@ -1,0 +1,18 @@
+
+############
+## OSes
+############
+
+[Tt]humbs.db
+[Dd]esktop.ini
+*.DS_store
+.DS_store?
+
+
+###########
+## npm
+###########
+
+node_modules/
+npm-debug.log*
+wp-cli.phar
