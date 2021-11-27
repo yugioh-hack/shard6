@@ -18,9 +18,12 @@
   },
   "devDependencies": {
     "@wordpress/scripts": "^12.1.0",
+    "autoprefixer": "^10.4.0",
     "dir-archiver": "^1.1.1",
     "node-sass": "^4.14.1",
-    "rtlcss": "^2.5.0"
+    "postcss": "^8.4.4",
+    "rtlcss": "^2.5.0",
+    "tailwindcss": "^2.2.19"
   },
   "rtlcssConfig": {
     "options": {
