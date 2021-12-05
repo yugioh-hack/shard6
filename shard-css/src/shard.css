@@ -1,1 +1,2 @@
-@import "navigation.css"
+@import "tailwind/tailwind.css";
+@import "navigation.css";

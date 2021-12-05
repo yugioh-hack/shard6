@@ -140,8 +140,8 @@ add_action( 'widgets_init', 'shard6_widgets_init' );
  * Enqueue scripts and styles.
  */
 function shard6_scripts() {
-	wp_enqueue_style( 'shard6-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'shard6-style', 'rtl', 'replace' );
+	//wp_enqueue_style( 'shard6-style', get_stylesheet_uri(), array(), _S_VERSION );
+	//wp_style_add_data( 'shard6-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'shard6-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -149,7 +149,7 @@ function shard6_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	//wp_enqueue_style( 'tailwind', get_template_directory_uri().'/tailwind/tailwind.css', array(), _S_VERSION );
-	//wp_enqueue_style( 'shard6-css', get_template_directory_uri().'/shard-css/dist/shard.css', array(), _S_VERSION );
+	wp_enqueue_style( 'shard6-css', get_template_directory_uri().'/shard-css/dist/shard.css', array(), _S_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'shard6_scripts' );
 
