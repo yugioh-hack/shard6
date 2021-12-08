@@ -1,2 +1,29 @@
 @import "tailwind/tailwind.css";
-@import "navigation.css";
+/*--------------------------------------------------------------
+# Abstracts
+--------------------------------------------------------------*/
+@import "abstracts/define.mixin.css"; /*Uncomment this line for a sidebar on right side of your content.*/
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+@import "layouts/content-sidebar.css"; /*Uncomment this line for a sidebar on right side of your content.*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components.css";
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+/* @import "plugins/jetpack/infinite-scroll";
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+/* @import "utilities/accessibility"; */

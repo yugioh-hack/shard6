@@ -1,0 +1,27 @@
+/* Navigation
+--------------------------------------------- */
+@import "navigation/navigation.css";
+
+/* Posts and pages
+--------------------------------------------- */
+@import "content/posts-and-pages.css";
+
+/* Comments
+--------------------------------------------- */
+@import "comments/comments.css";
+
+/* Widgets
+--------------------------------------------- */
+@import "widgets/widgets.css";
+
+/* Media
+--------------------------------------------- */
+@import "media/media.css";
+
+/* Captions
+--------------------------------------------- */
+@import "media/captions.css";
+
+/* Galleries
+--------------------------------------------- */
+@import "media/galleries.css";
