@@ -140,16 +140,34 @@ add_action( 'widgets_init', 'shard6_widgets_init' );
  * Enqueue scripts and styles.
  */
 function shard6_scripts() {
-	//wp_enqueue_style( 'shard6-style', get_stylesheet_uri(), array(), _S_VERSION );
-	//wp_style_add_data( 'shard6-style', 'rtl', 'replace' );
+	$theme_info = wp_get_theme();
+	wp_enqueue_style( 
+		'shard6-style',
+		get_stylesheet_uri(), 
+		array(), 
+		$theme_info->get('Version')
+	);
+	wp_style_add_data( 'shard6-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'shard6-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	wp_enqueue_style( 'tailwind', get_template_directory_uri().'/tailwind/dist/tailwind.css', array(), _S_VERSION );
-	wp_enqueue_style( 'shard6-css', get_template_directory_uri().'/shard-css/dist/shard.css', array(), _S_VERSION );
+	$file_tailwind = '/tailwind/dist/tailwind.css';
+	$file_shard6 = '/shard-css/dist/shard.css';
+	wp_enqueue_style(
+		'tailwind', 
+		get_stylesheet_directory_uri() . $file_tailwind, 
+		array(), 
+		date("YmdHis",filemtime(get_template_directory(). $file_tailwind))
+	);
+	wp_enqueue_style(
+		'shard6-css', 
+		get_stylesheet_directory_uri() . $file_shard6, 
+		array(), 
+		date("YmdHis",filemtime(get_template_directory(). $file_shard6))
+	);
 }
 add_action( 'wp_enqueue_scripts', 'shard6_scripts' );
 
