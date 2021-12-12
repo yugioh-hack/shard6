@@ -52,6 +52,7 @@
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map",
     "prebuild-shard": "rimraf shard-css/dist",
     "build-shard": "postcss shard-css/src/shard.css --dir shard-css/dist",
+    "watch-shard": "onchange 'shard-css/src/**/*.css' -- npm run build-shard",
     "pretailwind": "rimraf tailwind/dist",
     "tailwind": "tailwindcss build tailwind/src/tailwind.css -o tailwind/dist/tailwind.css"
   }
