@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Abstracts
 --------------------------------------------------------------*/
-@import "abstracts/define.mixin.css"; /*Uncomment this line for a sidebar on right side of your content.*/
+@import "abstracts/abstracts.css"; /*Uncomment this line for a sidebar on right side of your content.*/
 
 /*--------------------------------------------------------------
 # Layouts
