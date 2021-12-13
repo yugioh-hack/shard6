@@ -156,12 +156,12 @@ function shard6_scripts() {
 	}
 	$file_tailwind = '/tailwind/dist/tailwind.css';
 	$file_shard6 = '/shard-css/dist/shard.css';
-	wp_enqueue_style(
-		'tailwind', 
-		get_stylesheet_directory_uri() . $file_tailwind, 
-		array(), 
-		date("YmdHis",filemtime(get_template_directory(). $file_tailwind))
-	);
+	// wp_enqueue_style(
+	// 	'tailwind', 
+	// 	get_stylesheet_directory_uri() . $file_tailwind, 
+	// 	array(), 
+	// 	date("YmdHis",filemtime(get_template_directory(). $file_tailwind))
+	// );
 	wp_enqueue_style(
 		'shard6-css', 
 		get_stylesheet_directory_uri() . $file_shard6, 
